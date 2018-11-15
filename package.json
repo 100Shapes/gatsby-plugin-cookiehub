@@ -1,0 +1,40 @@
+{
+  "name": "gatsby-plugin-cookiehub",
+  "version": "1.0.0",
+  "description": "Gatsby.js plugin to add the cookiehub widget for GDPR compliance in europe.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir . --ignore **/__tests__",
+    "prepare": "cross-env NODE_ENV=production npm run build",
+    "watch": "babel -w src --out-dir . --ignore **/__tests__"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/100Shapes/gatsby-plugin-cookiehub.git"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "GDPR",
+    "cookie"
+  ],
+  "author": "Michele Memoli <michele@100shapes.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/100Shapes/gatsby-plugin-cookiehub/issues"
+  },
+  "homepage": "https://github.com/100Shapes/gatsby-plugin-cookiehub#readme",
+  "peerDependencies": {
+    "gatsby": ">2.0.0-alpha"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "babel-preset-gatsby-package": "^0.1.2",
+    "cross-env": "^5.1.4"
+  }
+}
