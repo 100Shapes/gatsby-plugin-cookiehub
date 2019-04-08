@@ -11,7 +11,7 @@ exports.onRenderBody = (
   if (
     process.env.NODE_ENV !== 'production' ||
     !pluginOptions.cookihubId ||
-    !pluginOptions.gtagId
+    !pluginOptions.trackingId
   ) {
     return null;
   }
